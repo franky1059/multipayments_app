@@ -16,6 +16,10 @@ Major Goals Are:
 --- Products / Options mappings w/ price modifications
 --- Coupons / Promotions w/ price modifications
 --- Gifts 
+--- Recurring payments
+--- Nested payments
+--- Nested options / attributes
+--- SQL friendly reporting data organization and workflow
 - PSR-0 compatible
 - Unit / Functional Testing
 - Command-line friendly
