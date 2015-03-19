@@ -1,7 +1,7 @@
 
 
 SUMMARY:
-This project is a codebase for payments processing made in a way to be easily extendible and flexible with organizing products and options so that prices and functionality can be dynamically determined during runtime.
+This project is a codebase for payments processing made to be easily extendible and flexible with organizing products and options so that prices and functionality can be dynamically determined during runtime.
 
 
 DESCRIPTION:
