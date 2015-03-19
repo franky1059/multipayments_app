@@ -1,0 +1,41 @@
+
+
+SUMMARY:
+This project is a codebase for payments processing made in a way to be easily extendible and flexible with organizing products and options so that prices and functionality can be dynamically determined during runtime.
+
+
+DESCRIPTION:
+Multi-Payments Project was created to facilitate payments processing coded in a fashion that can be easily re-used and customized per project.  The idea is we can always pop this layer of code into any new or existing eCommerce solution to create or supplement what already exists to support whatever payments vendor and products structure we need. This is helpful bcs we won't need to recreate processing code over and over for each new site or codebase.  We'll only need to put in Multi-Payments code, then hook up functionality with hooks, db join tables, etc.  Then we can use the rest of the site's application code to accomplish other functionalities - i.e. shipping, erm, erp, crm, accounts, social, etc.  The result is that we'll have a fully functional, SQL searchable, scalable payments solution integrated into the rest of the site's code that can be easily customized / extended via object-oriented code.
+
+
+
+Major Goals Are:
+- Interchangeable payment processing vendors (stripe, paypal, 2Checkout, etc) w/o changing any application level code
+--- Multiple site / company processing 
+--- Products
+--- Products / Options mappings w/ price modifications
+--- Coupons / Promotions w/ price modifications
+--- Gifts 
+- PSR-0 compatible
+- Unit / Functional Testing
+- Command-line friendly
+- Logging
+
+
+DEVELOPMENT DETAILS:
+The Multipayments code has been built as a module to the light and popular Kohana framework. The idea being you'd need to bootstrap the Kohana framework into your existing code-base then run multipayments code - which is a pretty common scenario for most plugins.  And, of course, you can build a custom application from scratch using Kohana.  
+
+
+INSTALLATION:
+
+Install db w/ multipayments.sql
+Enable 'database', 'orm', and 'multipayments' modules in application/bootstrap.php
+Customize config/database.php and config/multipayments.php
+
+phpunit --bootstrap=modules/unittest/bootstrap.php modules/multipayments/tests/multipayments/ProcessorTest/ProductTest/OptionTest.php > output.html
+
+
+
+
+
+
